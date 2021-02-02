@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'BYekan';
+  src: url("../font/BYekan.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'IranianSans';
+  src: url("../font/IranianSans.ttf") format("truetype"); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  background: #f5f5f5; }
+
+body {
+  margin: 0;
+  width: 100%;
+  font-family: "BYekan", sans-serif;
+  font-size: 12px;
+  font-weight: 400; }
+
+a {
+  text-decoration: none; }
+
+img {
+  width: 100%; }
+
+.nav-static {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background: #fff; }
+  .nav-static .logo-and-search-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%; }
+    .nav-static .logo-and-search-box .logo {
+      padding: 0 20px;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      .nav-static .logo-and-search-box .logo h1 {
+        color: #EE384E;
+        font-size: 30px; }
+    .nav-static .logo-and-search-box .search-box {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 600px;
+      height: 100%;
+      position: relative; }
+      .nav-static .logo-and-search-box .search-box input {
+        width: 100%;
+        height: 40px;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 35px 10px 10px;
+        font-family: "BYekan", sans-serif;
+        background: #f0f0f1;
+        font-size: 1rem;
+        color: #333;
+        transition: 0.5s;
+        border: 1px solid #f0f0f1; }
+        .nav-static .logo-and-search-box .search-box input::placeholder {
+          color: #999;
+          font-size: 1rem; }
+        .nav-static .logo-and-search-box .search-box input:focus {
+          background: #fff;
+          border: 1px solid #999;
+          box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2); }
+      .nav-static .logo-and-search-box .search-box span {
+        position: absolute;
+        top: 60%;
+        transform: translateY(-60%);
+        right: 10px;
+        width: 15px;
+        cursor: pointer; }
+        .nav-static .logo-and-search-box .search-box span img {
+          width: 20px; }
+  .nav-static .login-and-sabad-karid {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    .nav-static .login-and-sabad-karid .login-con {
+      width: 50%;
+      padding: 0px 15px;
+      border-left: 1px solid #999;
+      cursor: pointer; }
+      .nav-static .login-and-sabad-karid .login-con img {
+        width: 20px;
+        height: 20px; }
+    .nav-static .login-and-sabad-karid .sabad-karid-btn {
+      width: 50%;
+      padding: 0px 15px;
+      cursor: pointer;
+      position: relative; }
+      .nav-static .login-and-sabad-karid .sabad-karid-btn span {
+        position: absolute;
+        top: 50%;
+        right: 6px;
+        padding: 0 5px;
+        border-radius: 5px;
+        font-size: .6rem;
+        color: #fff;
+        background: #EE384E; }
+      .nav-static .login-and-sabad-karid .sabad-karid-btn img {
+        width: 20px;
+        height: 20px; }

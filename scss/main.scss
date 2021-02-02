@@ -1,0 +1,98 @@
+@charset "UTF-8";
+@import 'fonts.scss';
+@import 'variables.scss';
+@import 'functions.scss';
+@import 'reset.scss';
+@import 'utilities.scss';
+.nav-static {
+    @include flexBox (row, space-between, center);
+    width: 100%;
+    height: 60px;
+    background: $colorPrimary;
+    .logo-and-search-box {
+        @include flexBox (row, space-between, center);
+        height: 100%;
+        .logo {
+            padding: 0 20px;
+            height: 100%;
+            @include flexBox (row, center, center);
+            h1 {
+                color: $colorRed;
+                font-size: 30px
+            }
+        }
+        .search-box {
+            @include flexBox (row, center, center);
+            width: 600px;
+            height: 100%;
+            position: relative;
+            input {
+                width: 100%;
+                height: 40px;
+                border: none;
+                border-radius: 5px;
+                padding: 10px 35px 10px 10px;
+                font-family: $fontYekan;
+                background: $colorInput;
+                font-size: 1rem;
+                color: #333;
+                transition: 0.5s;
+                border: 1px solid $colorInput;
+                &::placeholder {
+                    color: #999;
+                    font-size: 1rem;
+                }
+                &:focus {
+                    background: $colorPrimary;
+                    border: 1px solid #999;
+                    box-shadow: 0 0 10px 1px rgba(0,0,0,.2);
+                }
+            }
+            span {
+                position: absolute;
+                top: 60%;
+                transform: translateY(-60%);
+                right: 10px;
+                width: 15px;
+                cursor: pointer;
+                img {
+                    width: 20px;
+                }
+            }
+        }
+    }
+    .login-and-sabad-karid{
+        height: 100%;
+        @include flexBox (row, space-between, center);
+        .login-con{
+            width: 50%;
+            padding: 0px 15px;
+            border-left: 1px solid #999;
+            cursor: pointer;
+            img{
+                width: 20px;
+                height: 20px;
+            }
+        }
+        .sabad-karid-btn{
+            width: 50%;
+            padding: 0px 15px;
+            cursor: pointer;
+            position: relative;
+            span {
+                position: absolute;
+                top: 50%;
+                right: 6px;
+                padding: 0 5px;
+                border-radius: 5px;
+                font-size: .6rem;
+                color: $colorPrimary;
+                background: $colorRed;
+            }
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}

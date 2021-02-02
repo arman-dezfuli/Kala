@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    background: $colorBackground;
+}
+body {
+    margin: 0;
+    width: 100%;
+    font-family: $fontYekan;
+    font-size: $fontSize;
+    font-weight: 400;
+}
+a {
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
