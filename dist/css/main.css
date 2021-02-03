@@ -97,24 +97,60 @@ img {
       width: 50%;
       padding: 0px 15px;
       border-left: 1px solid #999;
-      cursor: pointer; }
+      position: relative; }
+      .nav-static .login-and-sabad-karid .login-con .login-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 10px;
+        border-radius: 5px; }
       .nav-static .login-and-sabad-karid .login-con img {
         width: 20px;
-        height: 20px; }
-    .nav-static .login-and-sabad-karid .sabad-karid-btn {
+        height: 20px;
+        cursor: pointer; }
+      .nav-static .login-and-sabad-karid .login-con .login {
+        display: none;
+        position: absolute;
+        top: 30px;
+        left: 15px;
+        width: 200px;
+        height: 250px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2); }
+    .nav-static .login-and-sabad-karid .sabad-karid-con {
       width: 50%;
       padding: 0px 15px;
-      cursor: pointer;
       position: relative; }
-      .nav-static .login-and-sabad-karid .sabad-karid-btn span {
+      .nav-static .login-and-sabad-karid .sabad-karid-con .sabad-karid-btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding: 5px 10px;
+        border-radius: 5px; }
+        .nav-static .login-and-sabad-karid .sabad-karid-con .sabad-karid-btn span {
+          position: absolute;
+          top: 50%;
+          right: 2px;
+          padding: 0 5px;
+          border-radius: 5px;
+          font-size: .6rem;
+          color: #fff;
+          background: #EE384E; }
+        .nav-static .login-and-sabad-karid .sabad-karid-con .sabad-karid-btn img {
+          width: 20px;
+          height: 20px;
+          cursor: pointer; }
+      .nav-static .login-and-sabad-karid .sabad-karid-con .sabad-karid {
+        display: none;
         position: absolute;
-        top: 50%;
-        right: 6px;
-        padding: 0 5px;
-        border-radius: 5px;
-        font-size: .6rem;
-        color: #fff;
-        background: #EE384E; }
-      .nav-static .login-and-sabad-karid .sabad-karid-btn img {
-        width: 20px;
-        height: 20px; }
+        top: 30px;
+        left: 15px;
+        width: 300px;
+        height: 400px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2); }
