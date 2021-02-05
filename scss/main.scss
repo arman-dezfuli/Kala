@@ -81,15 +81,53 @@
                 cursor: pointer;
             }
             .login{
-                display: none;
-                position: absolute;
-                top: 30px;
-                left: 15px;
+                @extend %btnLogin;
                 width: 200px;
-                height: 250px;
-                background: $colorPrimary;
-                border-radius: 10px;
-                box-shadow: $boxShadow1;
+                &-con {
+                    @include flexBox (column, flex-start, flex-start);
+                    padding: 0;
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    .profile {
+                        width: 100%;
+                        height: 100%;
+                        @include flexBox (row, flex-start, flex-start);
+                        div:nth-child(1) {
+                            width: 60px;
+                            padding: 2px;
+                            border-radius: 5px;
+                            img {
+                                width: 60px;
+                                height: 60px;
+                                border-radius: 5px;
+                            }
+                        }
+                        div:nth-child(2) {
+                            width: 100%;
+                            padding: 5px;
+                            @include flexBox (column, flex-start, flex-start);
+                            &:hover {
+                                background: none;
+                            }   
+                            a {
+                                padding-right: 5px;
+                            } 
+                            a:nth-child(2) {
+                                margin-top: 5px;
+                            }
+                            a:hover {
+                                color: #000;
+                            }
+                        }
+                    }
+                    div:nth-child(2) {
+                        @extend %divSpanLogin;
+                    }
+                    div:nth-child(3) {
+                        @extend %divSpanLogin;
+                    }
+                }
             }
         }
         .sabad-karid-con{
@@ -118,17 +156,109 @@
                 }
             }
             .sabad-karid {
-                display: none;
-                position: absolute;
-                top: 30px;
-                left: 15px;
+                @extend %btnLogin;
                 width: 300px;
                 height: 400px;
-                background: $colorPrimary;
-                border-radius: 10px;
-                box-shadow: $boxShadow1;
+                .con {
+                    width: 100%;
+                    height: 100%;
+                    @include flexBox (column, space-between, center);
+                    .sk-title {
+                        max-height: 35px;
+                         @include flexBox (row, space-between, center);
+                        padding: 10px 20px;
+                        width: 100%;
+                        border-bottom: 1px solid rgba(0,0,0,.1);
+                        span {
+                            color: #999;
+                        }
+                        a {
+                            color: #48cae4;
+                            &:hover {
+                                color: #00b4d8;
+                            }
+                        }
+                    }
+                    .sk-main {
+                        width: 100%;
+                        height: 313px;
+                       @include flexBox (column, flex-start, center);
+                       overflow-y: auto;
+                       .itames {
+                           @include flexBox (row, flex-start, flex-start);
+                           width: 100%;
+                           padding: 10px 5px;
+                           .imgBox {
+                               width: 60px;
+                           }
+                           .contentBox {
+                               @include flexBox (column, flex-start, flex-start);
+                               width: 240px;
+                               div:nth-child(1) {
+                                   width: 100%;
+                                   a {
+                                       color: #444;
+                                       text-align: justify;
+                                       &:hover {
+                                           color: #000;
+                                       }
+                                   }
+                               }
+                               div:nth-child(2) {
+                                   @include flexBox (row, space-between, center);
+                                   width: 100%;
+                                   padding: 10px 5px;
+                                   span:nth-child(1) {
+                                       color: #777;
+                                   }
+                                   span:nth-child(2) {
+                                       color: #777;
+                                   }
+                                   span:nth-child(3) {
+                                       width: 20px;
+                                       height: 20px;
+                                       border-radius: 5px;
+                                       cursor: pointer;
+                                       padding: 3px;
+                                       &:hover {
+                                           background: #f8edeb;
+                                       }
+                                    }
+                               }
+                           }
+                       }
+                    }
+                    .sk-footer {
+                        max-height: 50px;
+                        @include flexBox (row, space-between, center);
+                        width: 100%;
+                        padding: 5px 20px;
+                        border-top: 1px solid rgba(0, 0, 0, .1);
+                        div {
+                            @include flexBox (column, center, center);
+                            span:nth-child(1) {
+                                color: #777;
+                                padding: 2px;
+                            }
+                            span:nth-child(2) {
+                                color: #333;
+                                padding: 2px;
+                                font-size: 0.9rem;
+                            }
+                        }
+                        a {
+                            background: $colorRed;
+                            color: $colorPrimary;
+                            padding: 10px 25px;
+                            border-radius: 5px;
+                            &:hover {
+                                background: #e63946;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
 }
-// end nav-static
+@import 'media.scss';
