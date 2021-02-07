@@ -19,3 +19,9 @@ a {
 img{
     width: 100%;
 }
+ul {
+    @include flexBox (row, flex-start, center);
+}
+li {
+    list-style: none;
+}

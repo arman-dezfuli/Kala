@@ -32,3 +32,6 @@ function sabadBtn (x) {
     }
 }
 // end nav-static script
+// start navDynamic script
+
+// end navDynamic script
