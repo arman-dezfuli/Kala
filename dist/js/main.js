@@ -33,5 +33,19 @@ function sabadBtn (x) {
 }
 // end nav-static script
 // start navDynamic script
-
+let Kdcon = document.getElementById('Kdcon');
+let Ktcon = document.getElementById('Ktcon');
+let mpCon = document.getElementById('mpCon');
+let aknCon = document.getElementById('aknCon');
+let kaCon = document.getElementById('kaCon');
+let zsCon = document.getElementById('zsCon');
+let haCon = document.getElementById('haCon');
+let wsCon = document.getElementById('wsCon');
+const menuHover = (x,y) => {
+    if (y  === true) {
+        x.style.display = "block";
+    }else {
+        x.style.display = "none";
+    }
+};
 // end navDynamic script

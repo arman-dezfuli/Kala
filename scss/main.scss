@@ -290,7 +290,6 @@
                     font-size: 0.9rem;
                     color: #333;
                     margin-right: 25px;
-                    cursor: pointer;
                     border-bottom: 0px solid #fff;
                     // transition:  all 0.5s;
                     &:hover {
@@ -327,12 +326,12 @@
                                 @include flexBox (row, flex-start, flex-start);
                                 margin-right: 20px;
                                 width: 95%;
-                                height: 420px;
+                                height: 450px;
                                 background: #fafafa;
                                 border-radius: 0 0 10px 10px;
                                 .one {
                                     width: 18%;
-                                    height: auto;
+                                    height: 100%;
                                     border-left: 1px solid rgba(0, 0, 0, 0.08);
                                     ul {
                                         width: 100%;
@@ -341,10 +340,11 @@
                                         li {
                                             @include flexBox (row, flex-start, center);
                                             width: 100%;
-                                            padding: 15px 10px;
-                                            color: #555;
+                                            padding: 17px 10px;
+                                            color: #000;
+                                            cursor: pointer;
                                             border-right: 3px solid #fafafa;
-                                            font-size: 1rem;
+                                            font-size: 0.9rem;
                                             img:nth-child(2) {
                                                 margin-right: 10px ;
                                                 width: 10px;
@@ -356,7 +356,6 @@
                                             &:hover {
                                                 background: #f8edeb;
                                                 border-right: 3px solid #e63946;
-                                                color: #000;
                                             }
                                         }
                                     }
@@ -364,15 +363,91 @@
                                 .klalDg {
                                     display: none;
                                     width: 82%;
-                                    height: 420px;
-                                    background-color: #333;
-                                }
-                                .one {
-                                    ul {
-                                        li {
-                                            &:nth-child(1):hover .klalDg {
-                                                display: block;
+                                    height: 100%;
+                                    border-radius: 0 0 10px 10px;
+                                    .con {
+                                        @include flexBox (row, flex-start, center);
+                                        width: 100%;
+                                        height: 100%;
+                                        border-radius: 0 0 10px 10px;
+                                        .one {
+                                            @include flexBox (row, flex-start, center);
+                                            width: 75%;
+                                            height: 100%;
+                                            border-radius: 0 0 10px 10px;
+                                            border: none;
+                                            .col {
+                                                @include flexBox (column, flex-start, flex-start);
+                                                width: 25%;
+                                                height: 100%;
+                                                padding: 5px;
+                                                ul {
+                                                    @include flexBox (column, flex-start, flex-start);
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    li {
+                                                        width: 100%;
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        a {
+                                                            color: #777;
+                                                            font-size: 0.9rem;
+                                                            font-weight: normal;
+                                                            padding: 4px 0;
+                                                        }
+                                                        h4 {
+                                                            color: #000;
+                                                            font-size: 1rem;
+                                                            padding: 0px 0;
+                                                            font-weight: normal;
+
+                                                        }
+                                                        h5 {
+                                                            color: #000;
+                                                            font-size: 1rem;
+                                                            padding: 0px 0;
+                                                            font-weight: normal;
+
+                                                        }
+                                                    }
+                                                }
                                             }
+                                        }
+                                        .tow {
+                                            @include flexBox (column, space-around, center);
+                                            width: 25%;
+                                            height: 100%;
+                                            border-radius: 0 0 10px 10px;
+                                            .top {
+                                                width: 100%;
+                                                img {
+                                                    width: 280px;
+                                                    height: 220px;
+                                                    border-radius: 10px;
+                                                }
+                                            }
+                                            .buttom {
+                                                @include flexBox (column, flex-start, flex-start);
+                                                width: 100%;
+                                                div {
+                                                    @include flexBox (row, flex-start, center);
+                                                    margin-top: 10px;
+                                                    border-radius: 10px;
+                                                    width: 90px;
+                                                    height: 90px;
+                                                    span {
+                                                        font-size: 1rem;
+                                                    }
+                                                    img {
+                                                        width: 90px;
+                                                        height: 90px;
+                                                        border: 1px solid #666;
+                                                        border-radius: 10px;
+                                                        padding: 5px;
+                                                    }
+                                                }
+                                            }
+
                                         }
                                     }
                                 }
@@ -392,7 +467,6 @@
         }
     }
     // end nav dynamic
-
 }
 // end all
 @import 'media.scss';
